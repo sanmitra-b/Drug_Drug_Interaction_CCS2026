@@ -1,0 +1,12 @@
+- Means and SDs use 3 cold partition(s) (cold0, cold1, cold2); the partitions overlap, so the SD describes split sensitivity only.
+- one-unseen-drug, XGBoost: accuracy 0.495-0.800 and supported-label macro-F1 0.380-0.851 across the merged fixed bins.
+- one-unseen-drug, GNN + Morgan: accuracy 0.484-0.812 and supported-label macro-F1 0.386-0.858 across the merged fixed bins.
+- two-unseen-drug, XGBoost: accuracy 0.314-0.626 and supported-label macro-F1 0.124-0.531 across the merged fixed bins.
+- two-unseen-drug, GNN + Morgan: accuracy 0.305-0.634 and supported-label macro-F1 0.126-0.602 across the merged fixed bins.
+- Paired bootstrap (1000 draws, GNN + Morgan minus XGBoost, supported-label macro-F1): 5 of 12 fixed bins have a 95% interval that excludes zero (pointwise, conditional on non-empty partitions; two-unseen clustering is approximate).
+- grouped (used), one-unseen-drug: 198 test pairs with similarity ≥0.95 and 0 with an identity twin in training, summed over partitions (partitions overlap, so these are not unique pairs).
+- grouped (used), two-unseen-drug: 32 test pairs with similarity ≥0.95 and 0 with an identity twin in training, summed over partitions (partitions overlap, so these are not unique pairs).
+- ungrouped (reference), one-unseen-drug: 2,424 test pairs with similarity ≥0.95 and 3,846 with an identity twin in training, summed over partitions (partitions overlap, so these are not unique pairs).
+- ungrouped (reference), two-unseen-drug: 346 test pairs with similarity ≥0.95 and 519 with an identity twin in training, summed over partitions (partitions overlap, so these are not unique pairs).
+- one-unseen-drug, GNN + Morgan, excluding pairs ≥0.95: accuracy -0.0006, supported-label macro-F1 +0.0003 on average.
+- two-unseen-drug, GNN + Morgan, excluding pairs ≥0.95: accuracy -0.0019, supported-label macro-F1 -0.0137 on average.

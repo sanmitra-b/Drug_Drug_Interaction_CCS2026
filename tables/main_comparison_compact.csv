@@ -1,0 +1,7 @@
+protocol,model,partitions,accuracy,F1 (all 86),F1 (supported),top-3,top-5,evidence
+known-drug,XGBoost (ordered fp),1,0.905,0.857,0.857,0.992,0.997,single-split pilot
+known-drug,gnn unweighted,1,0.967,0.940,0.940,0.998,0.999,single-split pilot
+one-unseen-drug,XGBoost (ordered fp),3,0.666 ± 0.012,0.563 ± 0.024,0.606 ± 0.010,0.882 ± 0.013,0.940 ± 0.007,mean/sd over drug partitions (not a significance test)
+one-unseen-drug,gnn unweighted,3,0.700 ± 0.016,0.566 ± 0.034,0.609 ± 0.020,0.879 ± 0.006,0.924 ± 0.005,mean/sd over drug partitions (not a significance test)
+two-unseen-drug,XGBoost (ordered fp),3,0.447 ± 0.030,0.129 ± 0.005,0.271 ± 0.030,0.721 ± 0.032,0.839 ± 0.020,mean/sd over drug partitions (not a significance test)
+two-unseen-drug,gnn unweighted,3,0.471 ± 0.022,0.147 ± 0.008,0.309 ± 0.040,0.693 ± 0.032,0.785 ± 0.018,mean/sd over drug partitions (not a significance test)

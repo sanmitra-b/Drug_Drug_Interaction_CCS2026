@@ -1,0 +1,10 @@
+drug_A_role,drug_B_role,used_as,area_fraction,n_rows_in_dev_partition
+S: train drugs,S: train drugs,train (S-S),0.6400000000000001,121476
+S: train drugs,V: validation-unseen,validation (one V drug),0.07999999999999999,16592
+S: train drugs,T: test-unseen,test one-unseen (one T drug),0.07999999999999999,16392
+V: validation-unseen,S: train drugs,validation (one V drug),0.07999999999999999,13686
+V: validation-unseen,V: validation-unseen,"unused (V-V, V-T dropped)",0.009999999999999995,1806
+V: validation-unseen,T: test-unseen,"unused (V-V, V-T dropped)",0.009999999999999995,1824
+T: test-unseen,S: train drugs,test one-unseen (one T drug),0.07999999999999999,15801
+T: test-unseen,V: validation-unseen,"unused (V-V, V-T dropped)",0.009999999999999995,2150
+T: test-unseen,T: test-unseen,test two-unseen (T-T),0.009999999999999995,2071

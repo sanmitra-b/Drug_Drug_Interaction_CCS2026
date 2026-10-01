@@ -1,0 +1,6 @@
+split,model,weighting,val_macro_f1_all,val_macro_f1_supported,val_accuracy,val_macro_recall_supported,val_top3,val_top5,best_epoch,sec_per_epoch,train_sec,n_params,peak_gpu_mb
+cold0,xgb,none,0.6204,0.6507,0.7226,0.631,0.9196,0.9593,300,0.3524,105.7053,,
+cold0,mlp,none,0.649,0.6807,0.7445,0.6889,0.9277,0.959,13,1.0062,18.1119,4767318.0,362.4341
+cold0,sharedenc,none,0.6424,0.6738,0.747,0.7028,0.9208,0.9527,7,0.4721,5.6649,1227606.0,118.8198
+cold0,gnn,none,0.6634,0.6958,0.7495,0.7323,0.9286,0.9603,14,5.5918,106.2446,1055318.0,782.3257
+cold0,transformer,none,0.634,0.6649,0.7482,0.6878,0.9064,0.9397,11,0.5733,9.1723,1424214.0,125.4897

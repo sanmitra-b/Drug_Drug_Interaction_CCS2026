@@ -1,0 +1,5 @@
+split,known-drug,one-unseen-drug,two-unseen-drug
+cold0,0,2,2
+cold1,0,2,2
+cold2,0,2,2
+known,2,0,0

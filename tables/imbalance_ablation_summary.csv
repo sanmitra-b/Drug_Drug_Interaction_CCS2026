@@ -1,0 +1,4 @@
+treatment,mean val F1 (86),sd across partitions,partitions beating unweighted,partitions compared
+post-hoc logit adjustment,0.63806110220212,0.036732256117073675,1,3
+sqrt weights,0.6158603744348318,0.041909881040300405,0,3
+unweighted,0.6357525551645019,0.035341389330488485,0,3

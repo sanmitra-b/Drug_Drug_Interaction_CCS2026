@@ -1,0 +1,4 @@
+seed,held_out_drugs,held_out_drugs_with_twin_in_train,pct_of_one_unseen_test_rows_affected
+0,340,13,6.07
+1,340,23,3.89
+2,340,15,2.35

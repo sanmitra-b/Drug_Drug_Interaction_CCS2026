@@ -1,0 +1,13 @@
+split,split_type,protocol,n_pairs,pairs_sim_ge095,pct_pairs_sim_ge095,test_drugs,test_drugs_with_identity_twin_in_train,pairs_with_identity_twin
+cold0,grouped (used),one-unseen-drug,32193,89,0.27645761500947413,171,0,0
+cold0,grouped (used),two-unseen-drug,2071,10,0.48285852245292127,152,0,0
+cold0,ungrouped (reference),one-unseen-drug,29774,1279,4.295694229864983,169,12,1807
+cold0,ungrouped (reference),two-unseen-drug,1782,164,9.20314253647587,147,9,215
+cold1,grouped (used),one-unseen-drug,32162,109,0.3389092718114545,170,0,0
+cold1,grouped (used),two-unseen-drug,2126,22,1.03480714957667,158,0,0
+cold1,ungrouped (reference),one-unseen-drug,33869,821,2.4240455874103164,170,9,1316
+cold1,ungrouped (reference),two-unseen-drug,2432,130,5.345394736842105,154,7,208
+cold2,grouped (used),one-unseen-drug,31501,0,0.0,170,0,0
+cold2,grouped (used),two-unseen-drug,1970,0,0.0,155,0,0
+cold2,ungrouped (reference),one-unseen-drug,30775,324,1.0528025995125914,168,6,723
+cold2,ungrouped (reference),two-unseen-drug,1913,52,2.7182435964453737,148,5,96

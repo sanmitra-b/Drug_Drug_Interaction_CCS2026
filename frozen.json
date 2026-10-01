@@ -1,0 +1,90 @@
+{
+ "neural": "gnn",
+ "treatment": "none",
+ "baseline_model": "xgb",
+ "baseline_weighting": "none",
+ "select_metric": "macro_f1_all",
+ "dev_partition": "cold0",
+ "ablation_partitions": [
+  "cold0",
+  "cold1",
+  "cold2"
+ ],
+ "mean_val_f1_by_treatment": {
+  "post-hoc logit adjustment": 0.6381,
+  "sqrt weights": 0.6159,
+  "unweighted": 0.6358
+ },
+ "treatment_selection_rule": "best alternative must beat unweighted by >= 0.005 mean val macro_f1_all",
+ "config": {
+  "SMOKE": false,
+  "RUN_TAG": "finale",
+  "SEED": 0,
+  "FP_BITS": 1024,
+  "FP_RADIUS": 2,
+  "KNOWN_SEED": 0,
+  "KNOWN_FRACS": [
+   0.8,
+   0.1,
+   0.1
+  ],
+  "COLD_SEEDS": [
+   0,
+   1,
+   2
+  ],
+  "DEV_COLD_SEED": 0,
+  "COLD_VAL_DRUG_FRAC": 0.1,
+  "COLD_TEST_DRUG_FRAC": 0.1,
+  "GROUP_IDENTITIES": true,
+  "BATCH": 1024,
+  "MAX_EPOCHS": 25,
+  "PATIENCE": 5,
+  "LR": 0.001,
+  "WD": 0.0001,
+  "PRINT_EVERY": 5,
+  "SELECT_METRIC": "macro_f1_all",
+  "XGB_ROUNDS": 300,
+  "XGB_DEPTH": 6,
+  "XGB_LR": 0.1,
+  "XGB_EARLY": 20,
+  "SQRT_WEIGHT_CAP": 10.0,
+  "EFF_BETA": 0.999,
+  "TAU_GRID": [
+   0.0,
+   0.25,
+   0.5,
+   0.75,
+   1.0,
+   1.5,
+   2.0
+  ],
+  "TAIL_BINS": [
+   [
+    1,
+    20
+   ],
+   [
+    21,
+    100
+   ],
+   [
+    101,
+    1000000000
+   ]
+  ],
+  "ABLATION_ALL_PARTITIONS": true,
+  "MIN_TREATMENT_GAIN": 0.005,
+  "RUN_EFFNUM": false,
+  "RUN_XGB_WEIGHTED": false,
+  "RUN_GNN": true,
+  "RUN_TRANSFORMER": true,
+  "TRANSFORMER_ID": "DeepChem/ChemBERTa-77M-MLM",
+  "RUN_EXTRA_PARTITIONS": true,
+  "BOOTSTRAP_REPEATS": 1000,
+  "BOOTSTRAP_SEED": 0,
+  "TRAIN_CAP": null
+ },
+ "raw_sha256": "27ddadcb22e472f6a0845cb23a077a7e0052ebc03a4933562efe11b9365c6d2f",
+ "note": "Chosen on validation sets only. tau for post-hoc adjustment is re-selected on each split validation set."
+}

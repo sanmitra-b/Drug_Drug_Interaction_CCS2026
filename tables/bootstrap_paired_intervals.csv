@@ -1,0 +1,7 @@
+split,A,B,f1_denominator,observed_diff_A_minus_B,ci95_low,ci95_high,interval_includes_zero,held_out_groups,repeats
+cold0,gnn unweighted,XGBoost (ordered fp),supported labels,-0.009487808053208924,-0.03616243271344956,0.03648914841161711,True,164,1000
+cold0,gnn unweighted,XGBoost (ordered fp),all 86 labels,-0.009267161354297282,-0.0353214459061601,0.03564056356483524,True,164,1000
+cold1,gnn unweighted,XGBoost (ordered fp),supported labels,-0.011666335067850087,-0.047576450427861655,0.012930537747829277,True,164,1000
+cold1,gnn unweighted,XGBoost (ordered fp),all 86 labels,-0.01017412941963669,-0.04149109048941416,0.011276631756827835,True,164,1000
+cold2,gnn unweighted,XGBoost (ordered fp),supported labels,0.030177356244019293,-0.012815141220852616,0.059503670417454774,True,164,1000
+cold2,gnn unweighted,XGBoost (ordered fp),all 86 labels,0.028422858787971572,-0.012070074870802997,0.056044154695509746,True,164,1000

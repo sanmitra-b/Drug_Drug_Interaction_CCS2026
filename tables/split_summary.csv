@@ -1,0 +1,5 @@
+split,train,val,test_known,classes_absent_from_train,classes_1_to_20_train,test_one_unseen,test_two_unseen
+known,153434,19176,19188.0,0,13,,
+cold0,121476,30278,,1,12,32193.0,2071.0
+cold1,121649,30055,,2,14,32162.0,2126.0
+cold2,127575,26210,,3,14,31501.0,1970.0

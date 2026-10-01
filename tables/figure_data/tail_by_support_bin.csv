@@ -1,0 +1,17 @@
+bin,label,value,metric
+0 (absent from train),XGBoost (ordered fp),0.0,macro_recall
+1-20,XGBoost (ordered fp),0.4173941798941799,macro_recall
+21-100,XGBoost (ordered fp),0.6431263673055132,macro_recall
+>100,XGBoost (ordered fp),0.5897792359915385,macro_recall
+0 (absent from train),gnn unweighted,0.0,macro_recall
+1-20,gnn unweighted,0.41779100529100527,macro_recall
+21-100,gnn unweighted,0.6831655434728695,macro_recall
+>100,gnn unweighted,0.6688716524394144,macro_recall
+0 (absent from train),XGBoost (ordered fp),0.0,macro_precision
+1-20,XGBoost (ordered fp),0.44722222222222224,macro_precision
+21-100,XGBoost (ordered fp),0.80708578671029,macro_precision
+>100,XGBoost (ordered fp),0.7878731305702434,macro_precision
+0 (absent from train),gnn unweighted,0.0,macro_precision
+1-20,gnn unweighted,0.4277777777777778,macro_precision
+21-100,gnn unweighted,0.7017855660015747,macro_precision
+>100,gnn unweighted,0.7067054786721969,macro_precision

@@ -1,0 +1,6 @@
+{
+ "checkpoint": "DeepChem/ChemBERTa-77M-MLM",
+ "dim": 384,
+ "n_truncated_at_256_tokens": 6,
+ "note": "Frozen encoder, mean-pooled. Record the checkpoint pretraining corpus in the poster; exposure to DrugBank molecules is possible."
+}

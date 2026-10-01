@@ -1,0 +1,7 @@
+{
+ "n_drugs": 1705,
+ "n_identity_groups": 1644,
+ "groups_with_more_than_one_drug": 47,
+ "drugs_in_multi_drug_groups": 108,
+ "grouping_enabled": true
+}
